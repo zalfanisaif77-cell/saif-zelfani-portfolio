@@ -1,0 +1,18 @@
+(()=>{
+const header=document.getElementById('site-header');
+const progress=document.getElementById('scroll-progress');
+const onScroll=()=>{if(header)header.classList.toggle('is-scrolled',window.scrollY>36);if(progress){const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;progress.style.transform='scaleX('+(max>0?window.scrollY/max:0)+')';progress.style.transformOrigin='left';}};
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+const btn=document.getElementById('menu-btn'),panel=document.getElementById('mobile-panel');
+const close=()=>{if(!panel||!btn)return;panel.hidden=true;panel.style.display='none';btn.innerText='☰';btn.setAttribute('aria-expanded','false');document.body.classList.remove('menu-is-open')};
+if(btn&&panel){panel.style.display='none';btn.addEventListener('click',()=>{const show=panel.hidden||panel.style.display==='none';panel.hidden=!show;panel.style.display=show?'block':'none';btn.innerText=show?'✕':'☰';btn.setAttribute('aria-expanded',String(show));document.body.classList.toggle('menu-is-open',show);});document.querySelectorAll('.mobile-link').forEach(a=>a.addEventListener('click',close));}
+const cards=[...document.querySelectorAll('.project-card')];
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button))});cards.forEach(card=>{card.hidden=filter!=='Tous'&&card.dataset.category!==filter;card.style.display=card.hidden?'none':''});}));
+const form=document.getElementById('contact-form');if(form){form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const subject=encodeURIComponent('Portfolio Saif Zelfani — '+data.get('subject'));const message=encodeURIComponent('Bonjour Saif,\n\n'+data.get('message')+'\n\nDe : '+data.get('name')+'\nEmail : '+data.get('email'));document.getElementById('mail-status').hidden=false;window.location.href='mailto:zalfanisaif77@gmail.com?subject='+subject+'&body='+message;});}
+const images=window.CASE_IMAGES||[],lightbox=document.getElementById('lightbox');let ix=0;
+const show=(index)=>{if(!images.length||!lightbox)return;ix=(index+images.length)%images.length;document.getElementById('lightbox-img').src=images[ix].src;document.getElementById('lightbox-img').alt=images[ix].alt;document.getElementById('lightbox-caption').textContent=images[ix].caption;document.getElementById('lightbox-count').textContent=(ix+1)+' / '+images.length;lightbox.hidden=false;lightbox.style.display='flex';document.body.classList.add('menu-is-open');};
+const hide=()=>{if(!lightbox)return;lightbox.hidden=true;lightbox.style.display='none';document.body.classList.remove('menu-is-open')};
+document.querySelectorAll('[data-img-index]').forEach(b=>b.addEventListener('click',()=>show(Number(b.dataset.imgIndex))));
+if(lightbox){lightbox.style.display='none';document.getElementById('lightbox-close').addEventListener('click',hide);lightbox.addEventListener('click',e=>{if(e.target===lightbox)hide()});document.getElementById('lightbox-prev').addEventListener('click',()=>show(ix-1));document.getElementById('lightbox-next').addEventListener('click',()=>show(ix+1));}
+window.addEventListener('keydown',e=>{if(e.key==='Escape'){hide();close()}if(lightbox&&!lightbox.hidden){if(e.key==='ArrowRight')show(ix+1);if(e.key==='ArrowLeft')show(ix-1)}});
+})()
