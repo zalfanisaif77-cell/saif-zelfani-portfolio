@@ -1,0 +1,38 @@
+/* Creative Bento Studio — styling for legacy case studies. All rules scoped to .bento-case. */
+.bento-case{background:#f5f4ef!important;color:#16161d!important;font-family:'DM Sans',Arial,sans-serif!important;-webkit-font-smoothing:antialiased}
+.bento-case .page-wrap{width:min(1260px,calc(100% - 60px));max-width:1260px;margin-inline:auto}
+.bento-case .site-header{background:#f5f4efed!important;backdrop-filter:blur(16px);border-bottom:1px solid #00000013;box-shadow:none!important}
+.bento-case .header-inner{min-height:84px}.bento-case .brand{display:flex;align-items:center;gap:10px}
+.bento-case .brand-mark{background:#16161d!important;color:white!important;padding:12px!important;border-radius:13px!important;font:800 20px/1 'Space Grotesk',sans-serif!important;letter-spacing:-.07em}
+.bento-case .brand-name{font-size:11px!important;font-weight:900!important;color:#16161d!important;letter-spacing:.06em!important}
+.bento-case .brand-name b{color:#6541f5!important}.bento-case .desktop-nav a{font-size:13px!important;font-weight:800!important;color:#393944!important}
+.bento-case .desktop-nav a:hover{color:#6541f5!important}.bento-case .nav-cv{background:#16161d!important;color:white!important;padding:13px 17px!important;border-radius:11px!important;font-size:12px!important}
+.bento-case .mobile-toggle{background:#16161d!important;color:#fff!important;border-radius:10px!important;padding:11px!important}
+.bento-case .campaign-case{padding-top:125px!important}.bento-case .campaign-back{color:#6541f5!important;background:#ede8ff;display:inline-flex;padding:12px 16px;border-radius:40px;margin-bottom:39px!important;font-size:11px!important;text-decoration:none!important}
+.bento-case .campaign-topline{font-size:11px!important;font-weight:900!important;letter-spacing:.09em!important;color:#777489!important}
+.bento-case .campaign-title{font:800 clamp(46px,6.8vw,101px)/.98 'Space Grotesk',Arial,sans-serif!important;letter-spacing:-.078em!important;color:#16161d!important;max-width:1100px!important;text-transform:none!important;margin:24px 0!important}
+.bento-case .campaign-deck{font-size:17px!important;line-height:1.75!important;max-width:790px!important;color:#666674!important}
+.bento-case .campaign-overview{gap:12px!important;margin:42px 0!important}
+.bento-case .campaign-overview>div{border:1px solid #e6e4e8!important;background:#fff!important;border-radius:18px!important;padding:25px!important}
+.bento-case .campaign-overview strong{font-size:10px!important;letter-spacing:.12em!important;color:#6541f5!important}
+.bento-case .campaign-overview p{font-weight:650!important}
+.bento-case .campaign-art{border-radius:30px!important;margin:24px auto 76px!important;width:min(1260px,calc(100% - 60px))!important;padding:45px 25px!important}
+.bento-case .campaign-gallery{background:transparent!important}.bento-case .campaign-show{border-radius:22px!important;box-shadow:0 20px 60px #14111b19!important}
+.bento-case .campaign-control button{background:#16161d!important;color:#fff!important;border-radius:15px!important}
+.bento-case .campaign-thumbs button{border-radius:9px!important;overflow:hidden!important}
+.bento-case .campaign-thumbs button[aria-current=true]{border-color:#6541f5!important;outline:3px solid #6541f52e}
+.bento-case .zoom-action{border-radius:12px!important;background:#16161d!important;color:#fff!important}
+.bento-case .campaign-section{border-top:1px solid #e3e1e4!important;padding-top:46px!important}
+.bento-case .campaign-section h2{font:800 clamp(37px,4.8vw,66px)/.99 'Space Grotesk',sans-serif!important;letter-spacing:-.07em!important;color:#16161d!important}
+.bento-case .campaign-next{background:#e7e1ff!important;color:#16161d!important;border-radius:22px!important;margin-top:40px!important}
+.bento-case .campaign-modal{z-index:260!important}
+.bento-case .case-main{background:#f5f4ef!important}.bento-case .case-hero{padding-top:165px!important;padding-bottom:75px!important}
+.bento-case .case-hero h1{font:800 clamp(50px,6.8vw,102px)/1 'Space Grotesk',sans-serif!important;letter-spacing:-.075em!important}
+.bento-case .case-overview{border-radius:22px!important;overflow:hidden}.bento-case .case-gallery,.bento-case .case-deliverables{padding-top:75px!important;padding-bottom:50px!important}
+.bento-case .case-gallery h2,.bento-case .case-process h2,.bento-case .case-deliverables h2{font-family:'Space Grotesk',sans-serif!important;letter-spacing:-.06em!important}
+.bento-case .case-gallery img{border-radius:16px!important}
+.bento-case .case-next{background:#e2dcff!important}.bento-case .case-next a{border-radius:13px!important}
+.bento-case .footer{background:#16161d!important;color:white!important}
+.bento-case .footer-brand span{color:#d9fa54!important}.bento-case .footer a{color:white}
+@media(max-width:780px){.bento-case .page-wrap{width:calc(100% - 32px)!important}.bento-case .campaign-case{padding-top:95px!important}.bento-case .campaign-art{width:calc(100% - 24px)!important;padding:22px 12px!important;border-radius:23px!important}.bento-case .campaign-overview>div{padding:16px!important}.bento-case .case-hero{padding-top:110px!important}}
+@media(prefers-reduced-motion:reduce){.bento-case *, .bento-case *::before, .bento-case *::after{scroll-behavior:auto!important;animation-duration:0s!important;transition-duration:0s!important}}
