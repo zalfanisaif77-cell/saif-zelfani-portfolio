@@ -1,0 +1,50 @@
+/* CONTENT CURATION / 2026 — focused on real work, accessible, responsive. */
+body.bento-home{background:#f5f4ef}
+body.bento-home .bn-hero-major h1{font-size:clamp(53px,5.6vw,102px);letter-spacing:-.085em;overflow-wrap:normal;max-width:100%}
+.bn-section.cur-work{padding-top:98px}
+.cur-work .bn-section-head h2,.cur-expertise .bn-section-head h2{font-size:clamp(52px,6.2vw,101px)}
+.cur-brand-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.cur-brand{grid-column:span 6;background:#fff;border-radius:25px;overflow:hidden;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:430px;border:1px solid rgba(31,29,39,.07);box-shadow:0 16px 50px #1a171c0b;transition:transform .22s ease,box-shadow .22s ease}
+.cur-brand:hover{transform:translateY(-4px);box-shadow:0 26px 58px #1a171c15}
+.cur-brand-picture{display:block;position:relative;min-height:370px;overflow:hidden;background:#f1d8df}
+.cur-brand-picture img{height:100%;width:100%;object-fit:contain;transition:transform .4s ease}
+.cur-brand-picture:hover img{transform:scale(1.04)}
+.cur-img-arrow{position:absolute;top:18px;right:18px;border-radius:100px;background:#fff;color:#16161d;display:grid;place-items:center;width:38px;height:38px;font-weight:800;font-size:20px}
+.cur-brand-content{padding:33px 27px 25px;display:flex;flex-direction:column;min-width:0}
+.cur-brand-type{font:800 9px/1.6 var(--bn-body);letter-spacing:.13em;color:#736e7e;text-transform:uppercase;margin:0 0 18px}
+.cur-brand h3{font:800 clamp(29px,2.6vw,44px)/1.03 var(--bn-display);letter-spacing:-.065em;margin:0 0 16px}
+.cur-brand-headline{font:700 16px/1.35 var(--bn-body);margin:0 0 10px}
+.cur-brand-intro{color:#5e5a69;font-size:12.5px;line-height:1.63;margin:0 0 13px}
+.cur-brand-role{font-size:11px;line-height:1.6;color:#5b5664;margin:0 0 17px}
+.cur-brand-links{margin-top:auto;display:grid;gap:3px;border-top:1px solid #e7e4e8;padding-top:12px}
+.cur-brand-links a{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:12px;font-weight:750;border-radius:8px;padding:8px 6px;transition:background .2s,color .2s}
+.cur-brand-links a:hover{background:#eeebff;color:#6541f5}
+.cur-brand-links a span:last-child{font-size:17px}
+.cur-brand-coquette .cur-brand-picture{background:#f3ccdc}
+.cur-brand-losange .cur-brand-picture{background:#e3dbff}
+.cur-brand-layana .cur-brand-picture{background:#f7ddcb}
+.cur-brand-darlayana .cur-brand-picture{background:#ddede6}
+.cur-work-note{max-width:750px;font-size:12px;color:#6b6774;line-height:1.7;margin:25px auto 0;text-align:center}
+.cur-expertise .cur-skill-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.cur-skill-card{background:white;border:1px solid #e9e7ea;border-radius:22px;padding:27px 22px;min-height:315px;display:flex;flex-direction:column}
+.cur-skill-card:nth-child(2){background:#e4ddff}.cur-skill-card:nth-child(3){background:#dcf7dc}.cur-skill-card:nth-child(4){background:#ffe5d5}
+.cur-skill-card>span{font-size:10px;letter-spacing:.11em;font-weight:800;color:#6a6473}
+.cur-skill-card h3{font:700 24px/1.16 var(--bn-display);letter-spacing:-.06em;margin:35px 0 12px}
+.cur-skill-card p{font-size:12.5px;line-height:1.65;color:#625f69;margin:0 0 20px}
+.cur-skill-card a{margin-top:auto;align-self:flex-start;border-bottom:1px solid #16161d;font-size:10px;letter-spacing:.04em;font-weight:800;padding-bottom:5px}
+.cur-skill-card a:hover{color:#6541f5;border-color:#6541f5}
+.cur-brand-links a:focus-visible,.cur-skill-card a:focus-visible{outline:3px solid #6541f5;outline-offset:3px}
+.bn-about-main>p{font-size:14px}
+.bn-about-main h2{font-size:clamp(49px,5.5vw,82px)}
+.cur-related{max-width:1150px;margin:60px auto 70px;padding:0 24px;color:#17171e}
+.cur-related-inner{padding:38px;border-radius:25px;background:#f4f1fc;border:1px solid #e7e1f7}
+.cur-related-eyebrow{font-weight:800;letter-spacing:.12em;color:#6551ac;font-size:10px}
+.cur-related h2{font:700 clamp(25px,3.3vw,40px)/1.1 var(--bn-display);letter-spacing:-.055em;margin:18px 0 26px}
+.cur-related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:9px}
+.cur-related-links a{border-radius:12px;background:#fff;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:14px;font-weight:800;color:#1d1b26;text-decoration:none}
+.cur-related-links a:hover{background:#dcf7a2}
+.cur-back-home{display:inline-flex;margin-top:25px;color:#4234a1;text-decoration:underline;font-weight:800;font-size:13px}
+@media(max-width:1150px){.cur-brand{grid-column:span 12;min-height:360px;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}.cur-expertise .cur-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.cur-brand-grid{gap:13px}.cur-brand{grid-template-columns:1fr}.cur-brand-picture{height:320px;min-height:0}.cur-brand-content{padding:25px}.cur-brand h3{font-size:36px}.cur-expertise .cur-skill-grid{gap:10px}.cur-skill-card{padding:21px 16px;min-height:280px}.cur-skill-card h3{font-size:21px}.cur-work .bn-section-head h2,.cur-expertise .bn-section-head h2{font-size:clamp(46px,12vw,70px)}.cur-related-inner{padding:26px 20px}.cur-brand-picture img{object-fit:contain}body.bento-home .bn-hero-major h1{font-size:clamp(46px,10.5vw,74px)}}
+@media(max-width:430px){.cur-brand-picture{height:265px}.cur-skill-grid{grid-template-columns:1fr!important}.cur-skill-card{min-height:0}.cur-skill-card h3{margin-top:22px}.bn-hero-major h1{overflow-wrap:anywhere}body.bento-home .bn-hero-major h1{font-size:clamp(40px,10vw,54px)}.cur-brand h3{font-size:32px}}
+@media(prefers-reduced-motion:reduce){.cur-brand,.cur-brand-picture img{transition:none}}
